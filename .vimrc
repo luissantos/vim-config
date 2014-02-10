@@ -2,10 +2,11 @@ call pathogen#incubate()
 call pathogen#helptags()
 
 syntax on
-filetype plugin indent on
+"filetype plugin indent on
 set mouse=a
 set t_Co=256
 set nu
+set tabstop=4 shiftwidth=4 expandtab
 
 if has('gui_running')
     set background=light
@@ -37,4 +38,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 "let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'solarized'
+
+noremap <leader>o <Esc>:CommandT<CR>
+noremap <leader>O <Esc>:CommandTFlush<CR>
+noremap <leader>m <Esc>:CommandTBuffer<CR>
 
