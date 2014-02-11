@@ -3,6 +3,7 @@ call pathogen#helptags()
 
 syntax on
 "filetype plugin indent on
+filetype plugin on
 set mouse=a
 set t_Co=256
 set nu
