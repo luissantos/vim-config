@@ -44,3 +44,6 @@ noremap <leader>o <Esc>:CommandT<CR>
 noremap <leader>O <Esc>:CommandTFlush<CR>
 noremap <leader>m <Esc>:CommandTBuffer<CR>
 
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
+
