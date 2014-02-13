@@ -1,3 +1,6 @@
+set nocompatible  
+set spell  
+
 call pathogen#incubate()
 call pathogen#helptags()
 
@@ -10,7 +13,13 @@ set mouse=a
 set t_Co=256
 set nu
 set tabstop=4 shiftwidth=4 expandtab
-set nowrap
+set backspace=indent,eol,start  " backspace for dummys
+set linespace=0                 " No extra spaces between rows
+
+set nowrap                      " wrap long lines
+set autoindent                  " indent at the same level of theprevious line
+
+vmap <C-C> "+y                  "Ctrl+c copies the data to clipboard (+xterm_clipboard) 
 
 if has('gui_running')
     set background=light
