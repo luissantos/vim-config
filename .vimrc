@@ -20,7 +20,8 @@ set nowrap                      " wrap long lines
 set autoindent                  " indent at the same level of theprevious line
 set cursorline
 
-vmap <C-C> "+y                  "Ctrl+c copies the data to clipboard (+xterm_clipboard) 
+"Ctrl+c copies the data to clipboard (+xterm_clipboard) 
+vmap <C-C> "+y                  
 
 if has('gui_running')
     set background=light
