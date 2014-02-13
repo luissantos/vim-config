@@ -4,10 +4,13 @@ call pathogen#helptags()
 syntax on
 "filetype plugin indent on
 filetype plugin on
+filetype indent on
+
 set mouse=a
 set t_Co=256
 set nu
 set tabstop=4 shiftwidth=4 expandtab
+set nowrap
 
 if has('gui_running')
     set background=light
