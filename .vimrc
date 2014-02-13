@@ -18,6 +18,7 @@ set linespace=0                 " No extra spaces between rows
 
 set nowrap                      " wrap long lines
 set autoindent                  " indent at the same level of theprevious line
+set cursorline
 
 vmap <C-C> "+y                  "Ctrl+c copies the data to clipboard (+xterm_clipboard) 
 
