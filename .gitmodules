@@ -52,3 +52,6 @@
 [submodule "bundle/Conque-Shell"]
 	path = bundle/Conque-Shell
 	url = https://github.com/vim-scripts/Conque-Shell
+[submodule "bundle/plantuml-syntax"]
+	path = bundle/plantuml-syntax
+	url = https://github.com/aklt/plantuml-syntax
