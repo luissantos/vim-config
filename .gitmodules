@@ -64,3 +64,9 @@
 [submodule "bundle/emmet"]
 	path = bundle/emmet
 	url = https://github.com/mattn/emmet-vim/
+[submodule "bundle/bootstrap-snippets"]
+	path = bundle/bootstrap-snippets
+	url = git://github.com/bonsaiben/bootstrap-snippets.git
+[submodule "bundle/twig"]
+	path = bundle/twig
+	url = https://github.com/evidens/vim-twig.git

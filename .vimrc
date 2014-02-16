@@ -61,3 +61,5 @@ noremap <leader>m <Esc>:CommandTBuffer<CR>
 let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
 
+au BufRead,BufNewFile *.twig set filetype=html.twig
+
