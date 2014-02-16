@@ -5,7 +5,6 @@ call pathogen#incubate()
 call pathogen#helptags()
 
 syntax on
-"filetype plugin indent on
 filetype plugin on
 filetype indent on
 
@@ -39,6 +38,7 @@ autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=
 autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
 
 let g:SuperTabDefaultCompletionType = "context"
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
