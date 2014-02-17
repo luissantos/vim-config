@@ -18,6 +18,9 @@ set linespace=0                 " No extra spaces between rows
 set nowrap                      " wrap long lines
 set autoindent                  " indent at the same level of theprevious line
 set cursorline
+set completeopt=longest,menuone
+
+
 
 "Ctrl+c copies the data to clipboard (+xterm_clipboard) 
 vmap <C-C> "+y                  
@@ -68,4 +71,9 @@ au BufRead,BufNewFile *.twig set filetype=html.twig
 au BufRead,BufNewFile *.pu set filetype=plantuml
 au BufRead,BufNewFile *.uml set filetype=plantuml
 au BufRead,BufNewFile *.plantuml set filetype=plantuml
+
+
+let g:phpcomplete_index_composer_command='composer'
+autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
+
 
