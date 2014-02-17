@@ -38,7 +38,9 @@ autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=
 autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
 
 let g:SuperTabDefaultCompletionType = "context"
-imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+
+
+"imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
@@ -62,4 +64,8 @@ let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
 
 au BufRead,BufNewFile *.twig set filetype=html.twig
+
+au BufRead,BufNewFile *.pu set filetype=plantuml
+au BufRead,BufNewFile *.uml set filetype=plantuml
+au BufRead,BufNewFile *.plantuml set filetype=plantuml
 
