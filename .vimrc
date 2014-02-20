@@ -19,6 +19,7 @@ set nowrap                      " wrap long lines
 set autoindent                  " indent at the same level of theprevious line
 set cursorline
 set completeopt=longest,menuone
+set lazyredraw
 
 
 
