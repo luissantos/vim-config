@@ -19,7 +19,7 @@ set nowrap                      " wrap long lines
 set autoindent                  " indent at the same level of theprevious line
 set cursorline
 set completeopt=longest,menuone
-set lazyredraw
+"set lazyredraw
 
 
 
@@ -50,7 +50,7 @@ let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
 
 
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
@@ -77,4 +77,7 @@ au BufRead,BufNewFile *.plantuml set filetype=plantuml
 let g:phpcomplete_index_composer_command='composer'
 autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
 
+let g:vdebug_options = { 'port': 9000 , 'server' : '0.0.0.0' }
+
+source ~/.vim_xdebug_remote 
 
