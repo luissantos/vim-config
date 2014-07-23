@@ -91,3 +91,6 @@
 [submodule "bundle/puppet-syntax-vim"]
 	path = bundle/puppet-syntax-vim
 	url = https://github.com/puppetlabs/puppet-syntax-vim
+[submodule "bundle/octopress"]
+	path = bundle/octopress
+	url = https://github.com/tangledhelix/vim-octopress.git

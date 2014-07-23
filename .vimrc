@@ -73,6 +73,11 @@ au BufRead,BufNewFile *.pu set filetype=plantuml
 au BufRead,BufNewFile *.uml set filetype=plantuml
 au BufRead,BufNewFile *.plantuml set filetype=plantuml
 au BufRead,BufNewFile *.pp set filetype=puppet
+au BufNewFile,BufRead *.markdown setfiletype octopress
+au BufRead,BufNewFile *.md setlocal spell
+au BufRead,BufNewFile *.markdown setlocal spell
+
+set complete+=kspell
 
 
 let g:phpcomplete_index_composer_command='composer'
