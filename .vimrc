@@ -82,3 +82,6 @@ let g:vdebug_options = { 'port': 9000 , 'server' : '0.0.0.0' }
 
 source ~/.vim_xdebug_remote 
 
+
+map <F2> :!xmllint --format - <CR>
+
