@@ -1,6 +1,9 @@
 set nocompatible  
 set spell  
 
+" To disable a plugin, add it's bundle name to the following list
+let g:pathogen_disabled = ["vdebug"]
+
 call pathogen#incubate()
 call pathogen#helptags()
 
@@ -85,7 +88,7 @@ autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
 
 let g:vdebug_options = { 'port': 9000 , 'server' : '0.0.0.0' }
 
-source ~/.vim_xdebug_remote 
+"source ~/.vim_xdebug_remote 
 
 
 map <F2> :!xmllint --format - <CR>
