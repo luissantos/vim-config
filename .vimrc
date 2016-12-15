@@ -2,7 +2,7 @@ set nocompatible
 set spell  
 
 " To disable a plugin, add it's bundle name to the following list
-let g:pathogen_disabled = ["vdebug"]
+let g:pathogen_disabled = ["vdebug","phpcomplete-extended"]
 
 call pathogen#incubate()
 call pathogen#helptags()
