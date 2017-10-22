@@ -41,6 +41,8 @@ let g:solarized_contrast = "high"
 let g:solarized_termcolors = 256
 colorscheme solarized
 
+hi Normal guibg=NONE ctermbg=NONE
+
 autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
 autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
 
@@ -92,4 +94,8 @@ let g:vdebug_options = { 'port': 9000 , 'server' : '0.0.0.0' }
 
 
 map <F2> :!xmllint --format - <CR>
+
+highlight Search ctermbg=black ctermfg=yellow term=underline
+
+set hlsearch
 
