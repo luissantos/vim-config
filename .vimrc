@@ -81,6 +81,8 @@ au BufRead,BufNewFile *.pp set filetype=puppet
 au BufNewFile,BufRead *.markdown setfiletype octopress
 au BufRead,BufNewFile *.md setlocal spell
 au BufRead,BufNewFile *.markdown setlocal spell
+au BufNewFile,BufRead ~/.mutt/temp* set noautoindent filetype=mail wm=0 tw=78 nonumber digraph nolist
+
 
 set complete+=kspell
 
